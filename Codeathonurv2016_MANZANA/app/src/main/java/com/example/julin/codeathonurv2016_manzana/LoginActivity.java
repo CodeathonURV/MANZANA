@@ -3,6 +3,7 @@ package com.example.julin.codeathonurv2016_manzana;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -49,7 +50,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "foo@example.com:hello", "bar@example.com:world"
+            "prueba@prueba.com:123456", "dani@gmail.com:dani56", "juli@hotmail.com:juli95"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -92,6 +93,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+    }
+
+    public void PasarMenu(View v){
+        Intent nuevo= new Intent(this,MenuAsignaturasActivity.class);
+        startActivity(nuevo);
     }
 
     private void populateAutoComplete() {
