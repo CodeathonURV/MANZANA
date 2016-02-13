@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Registrarse"
-                android:onClick="PasarMenu"
+                android:onClick="PasarRegistro"
                 android:id="@+id/button"
                 style="?android:textAppearanceSmall"
                 android:textStyle="bold"

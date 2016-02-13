@@ -88,6 +88,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
                 attemptLogin();
+                Intent nuevoform = new Intent(LoginActivity.this,MenuAsignaturasActivity.class);
+                startActivity(nuevoform);
             }
         });
 
@@ -95,8 +97,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mProgressView = findViewById(R.id.login_progress);
     }
 
-    public void PasarMenu(View v){
-        Intent nuevo= new Intent(this,MenuAsignaturasActivity.class);
+    public void PasarRegistro(View v){
+        Intent nuevo= new Intent(this,RegisterActivity.class);
         startActivity(nuevo);
     }
 
