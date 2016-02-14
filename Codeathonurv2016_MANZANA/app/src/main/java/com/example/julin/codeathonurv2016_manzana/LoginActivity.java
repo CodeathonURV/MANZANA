@@ -103,7 +103,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         startActivity(nuevo);
     }
     public void Ok(View v){
-        Intent nuevo= new Intent(this,MenuAsignaturasActivity.class);
+        Intent nuevo= new Intent(this,OlvidasteActivity.class);
         startActivity(nuevo);
     }
 

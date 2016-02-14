@@ -10,15 +10,6 @@
     tools:context="com.example.julin.codeathonurv2016_manzana.OlvidasteActivity"
     android:background="#bbb4b4">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Introduce tu correo electrónico y dni:"
-        android:id="@+id/textView4"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +19,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="Correo electrónico" />
+        android:hint="Correo electrónico" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -37,5 +28,23 @@
         android:layout_below="@+id/editText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="DNI" />
+        android:hint="DNI"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordar"
+        android:id="@+id/button3"
+        android:layout_below="@+id/editText7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicio no disponible actualmente, para más información contacte con: 902 000 540"
+        android:id="@+id/textView10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
 </RelativeLayout>

@@ -21,116 +21,18 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <RadioGroup
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/radioGroup"
-        android:layout_below="@+id/textView2">
+        android:layout_alignParentStart="true">
 
-        <RadioButton
-            android:layout_width="wrap_content"
+        <ListView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Facultad de Química"
-            android:id="@+id/radioButton"
-            android:checked="false" />
+            android:id="@+id/listView5" />
+    </LinearLayout>
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facultad de Letras"
-            android:id="@+id/radioButton2"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facultad de Medicina y Ciencias de la Salud"
-            android:id="@+id/radioButton3"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facultad de Ciencias de la Educación y Psicología"
-            android:id="@+id/radioButton4"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facultad de Ciencias Jurídicas"
-            android:id="@+id/radioButton5"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facultad de Economía y Empresa"
-            android:id="@+id/radioButton6"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facultad de Enología"
-            android:id="@+id/radioButton7"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facultad de Enfermería"
-            android:id="@+id/radioButton8"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Facultad de Turismo y Geografía"
-            android:id="@+id/radioButton9"
-            android:checked="false" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="O Escuelas Técnicas Superiores:"
-            android:id="@+id/textView"
-            android:layout_column="0"
-            android:textSize="20sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Escuela Técnica Superior de Arquitectura"
-            android:id="@+id/radioButton10"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Escuela Técnica Superior de Ingeniería"
-            android:id="@+id/radioButton11"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Escuela Técnica Superior de Ingeniería Química"
-            android:id="@+id/radioButton12"
-            android:checked="false" />
-
-        <Button
-            android:layout_width="143dp"
-            android:layout_height="wrap_content"
-            android:text="Aceptar"
-            android:id="@+id/button2"
-            android:onClick="pasar"
-            android:layout_gravity="center_horizontal" />
-    </RadioGroup>
 </RelativeLayout>

@@ -21,62 +21,19 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <RadioGroup
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/radioGroup2"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true">
+        android:layout_below="@+id/textView3">
 
-        <RadioButton
-            android:layout_width="wrap_content"
+        <ListView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Grado en Ingeniería Eléctrica - GEE"
-            android:id="@+id/radioButton13"
-            android:checked="false" />
+            android:id="@+id/listView6"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Grado en Ingeniería Electrónica Industrial y Automática - GEEIiA"
-            android:id="@+id/radioButton14"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Grado en Ingeniería Informática - GEI"
-            android:id="@+id/radioButton15"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Grado en Ingeniería Telemática - GET"
-            android:id="@+id/radioButton16"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Doble titulación de Grado de Biotecnología y de Ingeniería Informática"
-            android:id="@+id/radioButton17"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Doble titulación de Grado de Ingeniería Eléctrica y Electrónica Industrial y Automática"
-            android:id="@+id/radioButton18"
-            android:checked="false" />
-
-        <Button
-            android:layout_width="143dp"
-            android:layout_height="wrap_content"
-            android:text="Aceptar"
-            android:id="@+id/button3"
-            android:onClick="toInformatic"
-            android:layout_gravity="center" />
-    </RadioGroup>
 </RelativeLayout>
