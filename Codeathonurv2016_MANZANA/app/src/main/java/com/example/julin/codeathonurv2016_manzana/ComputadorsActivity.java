@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -32,11 +33,19 @@ public class ComputadorsActivity extends AppCompatActivity implements Serializab
         listanu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(listaD.get(position).equals("Tipos de Saltos")){
+                if (listaD.get(position).equals("Tipos de Saltos")) {
                     startActivity(new Intent(ComputadorsActivity.this, TiposSaltosActivity.class));
+                } else {
+                    Toast.makeText(getApplicationContext(), "No existe la asignatura", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(getApplicationContext(), "No existe la asignatura", Toast.LENGTH_SHORT).show();}
+            }
+        });
+        Button mm = (Button) findViewById(R.id.MiPerfil);
+        mm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent nuevoform = new Intent(ComputadorsActivity.this, ProfileActivity.class);
+                startActivity(nuevoform);
             }
         });
     }
