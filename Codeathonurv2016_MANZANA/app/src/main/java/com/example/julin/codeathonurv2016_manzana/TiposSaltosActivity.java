@@ -20,5 +20,6 @@ ListView listanueva;
         listanueva = (ListView)findViewById(R.id.listVie99);
         ArrayAdapter<String> l= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listaS);
         listanueva.setAdapter(l);
+        
     }
 }
