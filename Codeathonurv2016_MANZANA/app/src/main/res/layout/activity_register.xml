@@ -85,6 +85,7 @@
         android:layout_height="wrap_content"
         android:text="Cancelar"
         android:id="@+id/bCancelar"
+        android:onClick="atras"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/editText6"
         android:layout_toEndOf="@+id/editText6" />

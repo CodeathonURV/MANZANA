@@ -130,6 +130,7 @@
             android:layout_height="wrap_content"
             android:text="Aceptar"
             android:id="@+id/button2"
+            android:onClick="pasar"
             android:layout_gravity="center_horizontal" />
     </RadioGroup>
 </RelativeLayout>

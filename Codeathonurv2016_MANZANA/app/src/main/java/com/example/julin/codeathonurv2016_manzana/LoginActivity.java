@@ -68,6 +68,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
+        setTitle("Inicio de Sesión");
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
 
@@ -97,8 +98,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mProgressView = findViewById(R.id.login_progress);
     }
 
-    public void PasarRegistro(View v){
+    public void pasarRegistro(View v){
         Intent nuevo= new Intent(this,RegisterActivity.class);
+        startActivity(nuevo);
+    }
+    public void Ok(View v){
+        Intent nuevo= new Intent(this,MenuAsignaturasActivity.class);
         startActivity(nuevo);
     }
 
