@@ -24,7 +24,7 @@ public class NuevoTema extends AppCompatActivity {
 
                 Tema = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView);
                 Intent returnIntent = new Intent();
-                String result=Tema.toString();
+                String result=Tema.getText().toString();
                 if(!(result.equals(""))){
                 returnIntent.putExtra("result",result);
                 setResult(NuevoTema.RESULT_OK,returnIntent);

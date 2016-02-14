@@ -12,15 +12,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.Serializable;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ComputadorsActivity extends AppCompatActivity implements Serializable{
     public ListView listanu;
     public ArrayAdapter<String> l;
-    public String[] listaD = {"Tipos de Saltos", "Suma y resta"};
+    public LinkedList<String> listaD = new LinkedList<String>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        listaD.add("Tipos de Saltos");
+        listaD.add("Tipos de datos");
         setContentView(R.layout.activity_computadors);
         setTitle("Fonaments de Computadors");
         listanu = (ListView)findViewById(R.id.google);
@@ -29,7 +32,7 @@ public class ComputadorsActivity extends AppCompatActivity implements Serializab
         listanu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(listaD[position].equals("Tipos de Saltos")){
+                if(listaD.get(position).equals("Tipos de Saltos")){
                     startActivity(new Intent(ComputadorsActivity.this, TiposSaltosActivity.class));
                 }
                 else{
@@ -42,7 +45,20 @@ public class ComputadorsActivity extends AppCompatActivity implements Serializab
         if (requestCode == 1) {
             if(resultCode == NuevoTema.RESULT_OK){
                 String result=data.getStringExtra("result");
-                l.add(result);
+                listaD.add(result);
+                l= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listaD);
+                listanu = (ListView)findViewById(R.id.google);
+                listanu.setAdapter(l);
+                listanu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        if(listaD.get(position).equals("Tipos de Saltos")){
+                            startActivity(new Intent(ComputadorsActivity.this, TiposSaltosActivity.class));
+                        }
+                        else{
+                            Toast.makeText(getApplicationContext(), "No existe la asignatura", Toast.LENGTH_SHORT).show();}
+                    }
+                });
             }
             if (resultCode == NuevoTema.RESULT_CANCELED) {
                 //Write your code if there's no result
@@ -53,9 +69,6 @@ public class ComputadorsActivity extends AppCompatActivity implements Serializab
         Intent i = new Intent(ComputadorsActivity.this,NuevoTema.class);
         startActivityForResult(i, 1);
 
-    }
-    public void añadirTema(String tema){
-        l.add(tema);
     }
 
 }
