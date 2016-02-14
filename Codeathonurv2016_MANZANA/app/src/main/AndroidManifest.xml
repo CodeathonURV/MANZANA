@@ -13,10 +13,6 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -38,7 +34,11 @@
         <activity android:name=".EtseActivity" />
         <activity android:name=".InformaticaActivity" />
         <activity android:name=".OlvidasteActivity" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ComputadorsActivity" />
+        <activity android:name=".PrimeroInformaticaActivity" />
+        <activity android:name=".TiposSaltosActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".NuevoTema"></activity>
     </application>
 
 </manifest>

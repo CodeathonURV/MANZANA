@@ -76,10 +76,9 @@
         android:layout_height="wrap_content"
         android:text="Registrar"
         android:id="@+id/bRegistrar"
-        android:layout_alignTop="@+id/editText6"
+        android:layout_below="@+id/editText6"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="right|center" />
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
