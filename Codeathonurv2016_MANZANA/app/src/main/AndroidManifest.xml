@@ -37,7 +37,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".EtseActivity" />
         <activity android:name=".InformaticaActivity" />
-        <activity android:name=".OlvidasteActivity"></activity>
+        <activity android:name=".OlvidasteActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
